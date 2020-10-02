@@ -24,7 +24,7 @@ class Person implements Comparable<Person>
         }
         Person guest = (Person) obj;
         return (
-            (guest.name==this.name) !!
+            (guest.name==this.name) ||
             (this.name != null && this.name.equals(guest.name))
         );
 
